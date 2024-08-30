@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
 
 import jakarta.persistence.Column;
@@ -26,7 +27,7 @@ public class TaskCreteTaskModel {
 	private LocalTime  taskTime;
 	
 	@Column
-	private String taskdate;
+	private LocalDate  taskdate;
 	
 	@Column
 	private int userid;
@@ -54,12 +55,12 @@ public class TaskCreteTaskModel {
 	public void setTaskTime(LocalTime taskTime) {
 		this.taskTime = taskTime;
 	}
-
-	public String getTaskdate() {
+ 
+	public LocalDate getTaskdate() {
 		return taskdate;
 	}
 
-	public void setTaskdate(String taskdate) {
+	public void setTaskdate(LocalDate taskdate) {
 		this.taskdate = taskdate;
 	}
 

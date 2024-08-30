@@ -13,8 +13,7 @@ import com.example.demo.model.TaskCreteTaskModel;
 
 public interface TaskCreateTaskRepo extends JpaRepository<TaskCreteTaskModel,Integer> {
 
-	List<TaskCreteTaskModel> findByUserid(int id);
-
-	List<TaskCreteTaskModel> findByTaskTimeAndTaskTime(LocalDate today, LocalTime now);
+    List<TaskCreteTaskModel> findByTaskdateAndTaskTime(LocalDate taskdate, LocalTime taskTime);
+    List<TaskCreteTaskModel> findByUserid(int userid);
 
 }
